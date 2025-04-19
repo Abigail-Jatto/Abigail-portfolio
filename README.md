@@ -1,4 +1,4 @@
-# 🎮 Film Data Cleaning Project (MySQL)
+# Film Data Cleaning Project (MySQL)
 
 This project involves duplicating, cleaning, and preparing a dataset named `film_data` for further analysis. The operations were performed using **MySQL**, with a focus on removing duplicates, correcting formatting issues, and ensuring data consistency.
 
@@ -6,7 +6,7 @@ This project involves duplicating, cleaning, and preparing a dataset named `film
 
 ---
 
-## 🗃️ Database & Table Setup
+## Database & Table Setup
 
 1. **Select database**  
    ```sql
@@ -26,7 +26,7 @@ This project involves duplicating, cleaning, and preparing a dataset named `film
 
 ---
 
-## 🧹 Data Cleaning Steps
+## Data Cleaning Steps
 
 ### 1. **Remove unwanted column**
 ```sql
