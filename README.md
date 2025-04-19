@@ -6,7 +6,8 @@ This project involves duplicating, cleaning, and preparing a dataset named `film
 
 ---
 
-## Database & Table Setup
+## Data Duplication and Backup
+The data was duplicated to maintain the original data and prevent data loss. 
 
 1. **Select database**  
    ```sql
@@ -61,12 +62,12 @@ SET SQL_SAFE_UPDATES = 0;
 
 -- Remove unwanted characters from movie titles
 UPDATE films
-SET movie_title = TRIM(BOTH "?�" FROM movie_title);
+SET movie_title = TRIM(BOTH "?Ã¿"  FROM movie_title);
 ```
 
 ---
 
-## ⏱️ Handling Missing or Invalid Duration
+## Handling Missing or Invalid Duration
 
 ### 1. **Check for invalid durations**
 ```sql
@@ -84,7 +85,7 @@ WHERE duration = ' ';
 
 ---
 
-## 🧑‍🎤 Rename & Clean Columns
+## Rename & Clean Columns
 
 ### 1. **Standardize column names**
 ```sql
@@ -106,7 +107,7 @@ ALTER TABLE films MODIFY director_facebook_likes INT;
 
 ---
 
-## 📊 Final Data Check
+## Final Data Check
 
 ```sql
 SELECT * FROM films;
@@ -114,7 +115,7 @@ SELECT * FROM films;
 
 ---
 
-## ✅ Summary
+## Summary
 
 This SQL project showcases basic yet essential steps in preparing a raw dataset for analysis, including:
 
